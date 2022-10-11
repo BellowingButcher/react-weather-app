@@ -1,9 +1,10 @@
 function SubmitButton () {
     function handleClick () {
-        console.log('You"ve clicked me');
+        let zipcode = document.getElementById('input').value;
+        console.log(zipcode);
     }
     return(
-        <button onClick= {handleClick}>Submit Zip</button>
+        <button id="zipBtn" onClick= {handleClick}>Submit Zip</button>
     )
 }
 export default SubmitButton;
